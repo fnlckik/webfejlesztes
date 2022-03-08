@@ -87,12 +87,21 @@ a:hover {
 }
 
 #p18 {
-    background-color: #B8860B;
+    background-color: #B8860B80;
 }
 
 #p19 {
-    background-color: rgb(184, 134, 11);
+    background-color: rgb(184, 134, 11, 50%);
     color: rgb(100, 100, 100);
     font-size: 150%;
     letter-spacing: 3px;
+}
+
+#p20 {
+    /* árnyalat, telítettség, fényerő */
+    background-color: hsl(130, 90%, 20%);
+}
+
+#p21 span {
+    color: red;
 }
