@@ -163,27 +163,31 @@ td, th {
     2. Függőlegesen felülre igazodjon a szöveg.
 */
 th {
-
+    height: 30px;
+    vertical-align: top;
 }
 
 /*
     0. A táblázat felirata legyen "Bevásárló lista".
     1. A felirat alsó margója 10px.
 */
-
+caption {
+    margin-bottom: 10px;
+}
 
 /*
     Az utolsó sor celláira mutatva a kurzor legyen célkereszt (crosshair).
 */
 tr:last-of-type {
-
+    cursor: crosshair;
 }
 
 /*
     A Star Wars cikk háttere legyen piros-kék-zöld lineáris színátmenet.
 */
 article {
-
+    background-image: linear-gradient(red, blue, green);
+    /* background-image: linear-gradient(red, orange, yellow, green, blue, purple); */
 }
 
 article p {
@@ -197,5 +201,5 @@ article p {
     Az napról szóló cikk háttere legyen narancs-fekete lineáris színátmenet a bal felső sarokból a jobb alsó felé. (0deg = 0fok = felfelé irány)
 */
 article:last-of-type {
-
+    background-image: linear-gradient(135deg, orange, black);
 }
