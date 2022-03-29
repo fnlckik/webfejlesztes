@@ -6,7 +6,10 @@ body {
     width: 80%;
     margin: 20px auto;
     border: 2px solid black;
+    position: relative;
 }
+
+/* body -> relative, de html-hez akarunk igazitani */
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -40,6 +43,9 @@ p {
 */
 .piros {
     background-color: red;
+    position: relative;
+    top: 20px;
+    left: 40px;
 }
 
 /*
@@ -49,8 +55,14 @@ p {
     4. A sormagasság 2-szeres.
     Miért nem elég a ".zold" szelektor?
 */
-.zold {
+.content .zold {
     background-color: green;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    padding: 0px;
+    line-height: 2em;
 }
 
 /*
