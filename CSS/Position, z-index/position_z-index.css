@@ -141,6 +141,7 @@ p {
     width: 90%;
     height: 140px;
     margin: auto;
+    position: relative;
 }
 
 .content2 div {
@@ -160,28 +161,37 @@ p {
     background-color: red;
     left: 0px;
     top: 0px;
+    position: absolute;
+    z-index: 10;
 }
 
 #doboz2 {
     background-color: green;
     left: 25px;
     top: 25px;
+    position: absolute;
+    z-index: 1;
 }
 
 #doboz3 {
     background-color: blue;
     left: 50px;
     top: 50px;
+    position: absolute;
 }
 
 #doboz4 {
     background-color: brown;
     left: 75px;
     top: 75px;
+    position: absolute;
+    z-index: 12;
 }
 
 #doboz5 {
     background-color: purple;
     left: 100px;
     top: 100px;
+    position: absolute;
+    z-index: 2;
 }
