@@ -19,8 +19,8 @@ h1, footer p {
 */
 img {
     width: 50%;
-    /* display: block;
-    margin: auto; */
+    display: block;
+    margin: auto;
     float: right;
     max-width: 300px;
 }
@@ -112,8 +112,31 @@ body {
     }
 }
 
-@media (max-width: 570px) {
-    
+@media (min-width: 400px) and (max-width: 570px) {
+    nav ul {
+        background-color: green;
+    }
+
+    nav ul li a {
+        padding: 10px 0px;
+        color: white;
+    }
+}
+
+@media (max-width: 400px) {
+    nav ul {
+        background-color: aqua;
+        display: block;
+    }
+
+    nav ul li a {
+        display: block;
+        text-align: center;
+    }
+
+    img {
+        float: none;
+    }
 }
 
 /*
@@ -121,3 +144,12 @@ body {
     1. A fixen pozícionált hivatkozás balra igazodjon.
     2. A lábléc ne jelenjen meg.
 */
+@media (orientation: landscape) {
+    #fel {
+        right: 80%;
+    }
+
+    footer {
+        display: none;
+    }
+}
